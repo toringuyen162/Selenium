@@ -22,8 +22,9 @@ public class Locators {
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("John");
         //css selector =  Tagname[attribute='value']
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john@qa.team");
-        driver.findElement(By.cssSelector("//input[type='text'][2]")).clear();
+        driver.findElement(By.xpath("//input[type='text'][2]")).clear();
         //Nếu có nhiều item thì có thể sử dụng HTML index
+        driver.findElement(By.cssSelector("input[type='text'))
 
     }
 }
